@@ -1,0 +1,126 @@
+ .blue{
+    color:blue;
+ }
+
+ .body1 {
+   background-color: rgb(226, 211, 75);
+   border-bottom: 3px solid #e7e18d;
+ }
+
+
+ .body2 {
+   background-color: rgb(62, 43, 114);
+   background-size: 100%;
+ }
+.texthome1{
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+ .text1{
+  color: aliceblue;
+  font-family: "Sriracha", cursive;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 220%;
+}
+
+.para01 {
+  color: rgb(170, 148, 50);
+  font-family: "Pridi", serif;
+  font-weight: 300;
+  font-style: bold;
+  font-size: 150%
+}
+
+ .para1 {
+  color: rgb(15, 40, 61);
+  font-family: "Pridi", serif;
+  font-weight: 300;
+  font-style: bold;
+  font-size: 20px;
+}
+
+.body3 {
+   background-color: rgb(243, 238, 161);
+   background-size: 100%;
+ }
+
+ .h2{
+   color: rgb(43, 28, 128);
+  font-family: "Pridi", serif;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 35px;
+ }
+
+ .para2{
+  color: rgb(0, 0, 0);
+  font-family: "Pridi", serif;
+  font-weight: 300;
+  font-size: 20px;
+ }
+
+ .book-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(245, 218, 63, 0.4);
+  width: 80%;
+  
+}
+.book-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.body03 {
+  background-color: rgb(243, 238, 161);
+  color: #333;
+  font-family: 'Prompt', sans-serif;
+}
+
+.title-benefit {
+  color: rgb(43, 28, 128);
+  font-family: "Pridi", serif;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 35px;
+}
+
+.benefit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.benefit-item {
+  background: #e6df80;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  font-size: 1.05rem;
+}
+
+.benefit-item:hover {
+  transform: translateY(-3px);
+  background: #fffaf0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px){
+  .text1, .para01 {
+    text-align: center;
+  }
+  .body2 {
+    text-align: center;
+    padding: 10px;
+  }
+  .book-img{
+    width: 100%;
+  }
+  .title-benefit, .h2{
+    font-size: 150%;
+  }
+}
