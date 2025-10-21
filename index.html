@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <div class="shadow sticky-top body1">
+    <div class="sticky-top body1">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
@@ -88,12 +88,12 @@
                 <br>
                 <br>
                 <h1 class="text-center p-3 text1">"ถ้าแมวของเราส่งจดหมายมาจากดวงดาว...เธอจะกล้าเปิดอ่านไหม?"</h1>
-                <p class="para01 p-5 text-center">เมื่อความคิดถึงข้ามพรมแดนระหว่างโลกกับฟ้า
+                <p class="para01 p-3 text-center">เมื่อความคิดถึงข้ามพรมแดนระหว่างโลกกับฟ้า
                     หนังสือเล่มนี้จะพาเราไปสัมผัส
                     "จดหมาย" จากดาวที่เต็มไปด้วยความรัก ความผูกพัน และความอบอุ่นที่ไม่มีวันเลือน</p>
             </div>
 
-            <div class="text-center col-12 col-md-0 col-xl-5 p-5">
+            <div class="text-center col-12 col-md-0 col-xl-4 p-5 ms-2">
                 <img src="images/meow.jpg" width=400px class="book-img">
             </div>
 
@@ -222,6 +222,16 @@
     <script>
         AOS.init();
     </script>
+    <script>
+  window.addEventListener('scroll', function() {
+    const img = document.querySelector('.book-img');
+    const rect = img.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      img.classList.add('show');
+    }
+  });
+</script>
+
 </body>
 
 </html>

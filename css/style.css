@@ -5,13 +5,16 @@
  .body1 {
    background-color: rgb(226, 211, 75);
    border-bottom: 3px solid #e7e18d;
+   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
  }
 
 
  .body2 {
-   background-color: rgb(62, 43, 114);
    background-size: 100%;
- }
+    background: linear-gradient(to right, #193152, #481e64);
+  
+}
+ 
 .texthome1{
   font-size: 20px;
   font-style: italic;
@@ -21,17 +24,16 @@
  .text1{
   color: aliceblue;
   font-family: "Sriracha", cursive;
-  font-weight: 450;
-  font-style: normal;
-  font-size: 220%;
+   font-weight: 600;
+  font-size: 2.2em;
+  line-height: 1.6;
 }
 
 .para01 {
   color: rgb(170, 148, 50);
   font-family: "Pridi", serif;
-  font-weight: 300;
-  font-style: bold;
-  font-size: 150%
+  font-size: 1.2em;
+  margin-top: 10px;
 }
 
  .para1 {
@@ -63,15 +65,23 @@
  }
 
  .book-img {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 6px;
-  box-shadow: 0 8px 20px rgba(245, 218, 63, 0.4);
-  width: 80%;
-  
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(250, 238, 65, 0.15);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.3s ease;
 }
+
+.book-img.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .book-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .body03 {
@@ -123,4 +133,30 @@
   .title-benefit, .h2{
     font-size: 150%;
   }
+}
+
+
+.navbar-brand {
+  font-weight: 600;
+  color: #5a4631 !important;
+}
+
+.nav-link {
+  color: #000000 !important;
+  transition: all 0.2s ease;
+  font-weight: 350;
+  font-family: "Pridi", serif;
+  font-size: 1.2em;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid #9b7648;
+  color: #947044 !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
 }
